@@ -113,8 +113,8 @@ function draw() {
       trex.changeAnimation("collide", trex_collided);
 
       //definir tempo de vida aos objetos do jogo para que nunca sejam destruídos
-    obstaclesGroup.setlifetimeEach(-1);
-    cloudsGroup.setlifetimeEach(-1);
+    obstaclesGroup.setLifetimeEach(-1);
+    cloudsGroup.setLifetimeEach(-1);
 
 
      obstaclesGroup.setVelocityXEach(0);
@@ -172,7 +172,7 @@ function spawnClouds() {
     cloud.velocityX = -3;
     
      //atribua tempo de vida à variável
-    cloud.lifetime = 134;
+    cloud.lifetime = 200;
     
     //ajustar a profundidade
     cloud.depth = trex.depth;
